@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://art/background/grey-paper-texture.jpg" type="Texture" id=1]
+[ext_resource path="res://scenes/GameController.gd" type="Script" id=2]
+[ext_resource path="res://prefabs/LettersUsed.tscn" type="PackedScene" id=3]
+[ext_resource path="res://fonts/Chomsky.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://prefabs/Scoreboard.tscn" type="PackedScene" id=5]
+[ext_resource path="res://prefabs/GameBoard.tscn" type="PackedScene" id=6]
+[ext_resource path="res://fonts/Domine-Regular.ttf" type="DynamicFontData" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 67
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+font_data = ExtResource( 7 )
+
+[node name="Main" type="Node2D"]
+scale = Vector2( 0.952918, 0.914786 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -24.1364
+margin_top = -19.6767
+margin_right = 551.864
+margin_bottom = 304.323
+rect_scale = Vector2( 2.02155, 2.16488 )
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": true
+}
+
+[node name="GameController" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="GameLabel" type="Label" parent="."]
+margin_left = 29.3834
+margin_top = 2.1863
+margin_right = 633.383
+margin_bottom = 80.1863
+custom_colors/font_color = Color( 0.2, 0.2, 0.2, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "The Daily Scordle"
+
+[node name="GameBoard" parent="." instance=ExtResource( 6 )]
+position = Vector2( 26.2352, 54.6576 )
+scale = Vector2( 0.806971, 0.857701 )
+
+[node name="LettersUsed" parent="." instance=ExtResource( 3 )]
+position = Vector2( -67.1621, 341.063 )
+
+[node name="Scoreboard" parent="." instance=ExtResource( 5 )]
+position = Vector2( -67.1621, 139.923 )
+
+[node name="Timer" type="Node2D" parent="."]
+
+[node name="Title" type="Label" parent="Timer"]
+margin_left = 554.088
+margin_top = 183.65
+margin_right = 594.088
+margin_bottom = 197.65
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "TIME REMAINING:"
+
+[node name="Timer" type="Timer" parent="Timer"]
+
+[node name="Amount" type="Label" parent="Timer"]
+margin_left = 797.55
+margin_top = 183.65
+margin_right = 1030.55
+margin_bottom = 212.65
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "2:00"

@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://prefabs/Lora_font.tres" type="DynamicFont" id=1]
+[ext_resource path="res://art/tick_mark.png" type="Texture" id=2]
+[ext_resource path="res://art/handdrawn_circle_resize.png" type="Texture" id=3]
+[ext_resource path="res://art/warning.png" type="Texture" id=4]
+[ext_resource path="res://prefabs/Input.gd" type="Script" id=5]
+
+[node name="Input" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Selector" type="TextureRect" parent="."]
+visible = false
+margin_left = -12.0
+margin_top = -24.0
+margin_right = 109.0
+margin_bottom = 109.0
+size_flags_horizontal = 5
+size_flags_vertical = 5
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 5
+
+[node name="Background" type="ColorRect" parent="."]
+visible = false
+margin_left = 7.0
+margin_top = 5.0
+margin_right = 83.0
+margin_bottom = 84.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 23.554
+margin_top = 13.669
+margin_right = 63.554
+margin_bottom = 72.669
+custom_colors/font_color = Color( 0.168627, 0.168627, 0.168627, 1 )
+custom_fonts/font = ExtResource( 1 )
+align = 1
+valign = 1
+uppercase = true
+
+[node name="Underline" type="ColorRect" parent="."]
+margin_left = 5.0
+margin_top = 73.0
+margin_right = 87.0
+margin_bottom = 75.0
+size_flags_horizontal = 5
+size_flags_vertical = 5
+color = Color( 0.203125, 0.203125, 0.203125, 1 )
+
+[node name="Checkmark" type="TextureRect" parent="."]
+visible = false
+margin_left = 76.0
+margin_top = 15.0
+margin_right = 95.0
+margin_bottom = 44.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 5
+
+[node name="ExclamationMark" type="TextureRect" parent="."]
+visible = false
+margin_left = 66.0
+margin_top = 3.0
+margin_right = 103.0
+margin_bottom = 40.0
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 5

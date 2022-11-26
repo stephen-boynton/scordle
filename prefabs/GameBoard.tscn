@@ -1,0 +1,150 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://prefabs/Input.gd" type="Script" id=1]
+[ext_resource path="res://prefabs/Input.tscn" type="PackedScene" id=2]
+
+[node name="GameBoard" type="Node2D"]
+
+[node name="RowOne" type="Node2D" parent="."]
+position = Vector2( 41.9763, 78.7069 )
+scale = Vector2( 1, 1 )
+
+[node name="Input1" type="Node2D" parent="RowOne" groups=["Row_1"] instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="Input2" type="Node2D" parent="RowOne" groups=["Row_1"] instance=ExtResource( 2 )]
+position = Vector2( 100.743, 0 )
+script = ExtResource( 1 )
+
+[node name="Input3" type="Node2D" parent="RowOne" groups=["Row_1"] instance=ExtResource( 2 )]
+position = Vector2( 201.486, 0 )
+scale = Vector2( 1, 1 )
+script = ExtResource( 1 )
+
+[node name="Input4" type="Node2D" parent="RowOne" groups=["Row_1"] instance=ExtResource( 2 )]
+position = Vector2( 302.23, 0 )
+script = ExtResource( 1 )
+
+[node name="Input5" type="Node2D" parent="RowOne" groups=["Row_1"] instance=ExtResource( 2 )]
+position = Vector2( 402.973, 0 )
+script = ExtResource( 1 )
+
+[node name="RowTwo" type="Node2D" parent="."]
+position = Vector2( 41.9763, 174.904 )
+scale = Vector2( 1, 1 )
+
+[node name="Input1" type="Node2D" parent="RowTwo" groups=["Row_2"] instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="Input2" type="Node2D" parent="RowTwo" groups=["Row_2"] instance=ExtResource( 2 )]
+position = Vector2( 100.743, 0 )
+script = ExtResource( 1 )
+
+[node name="Input3" type="Node2D" parent="RowTwo" groups=["Row_2"] instance=ExtResource( 2 )]
+position = Vector2( 201.486, 0 )
+scale = Vector2( 1, 1 )
+script = ExtResource( 1 )
+
+[node name="Input4" type="Node2D" parent="RowTwo" groups=["Row_2"] instance=ExtResource( 2 )]
+position = Vector2( 302.23, 0 )
+script = ExtResource( 1 )
+
+[node name="Input5" type="Node2D" parent="RowTwo" groups=["Row_2"] instance=ExtResource( 2 )]
+position = Vector2( 402.973, 0 )
+script = ExtResource( 1 )
+
+[node name="RowThree" type="Node2D" parent="."]
+position = Vector2( 41.9763, 271.102 )
+scale = Vector2( 1, 1 )
+
+[node name="Input1" type="Node2D" parent="RowThree" groups=["Row_3"] instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="Input2" type="Node2D" parent="RowThree" groups=["Row_3"] instance=ExtResource( 2 )]
+position = Vector2( 100.743, 0 )
+script = ExtResource( 1 )
+
+[node name="Input3" type="Node2D" parent="RowThree" groups=["Row_3"] instance=ExtResource( 2 )]
+position = Vector2( 201.486, 0 )
+scale = Vector2( 1, 1 )
+script = ExtResource( 1 )
+
+[node name="Input4" type="Node2D" parent="RowThree" groups=["Row_3"] instance=ExtResource( 2 )]
+position = Vector2( 302.23, 0 )
+script = ExtResource( 1 )
+
+[node name="Input5" type="Node2D" parent="RowThree" groups=["Row_3"] instance=ExtResource( 2 )]
+position = Vector2( 402.973, 0 )
+script = ExtResource( 1 )
+
+[node name="RowFour" type="Node2D" parent="."]
+position = Vector2( 41.9763, 367.299 )
+scale = Vector2( 1, 1 )
+
+[node name="Input1" type="Node2D" parent="RowFour" groups=["Row_4"] instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="Input2" type="Node2D" parent="RowFour" groups=["Row_4"] instance=ExtResource( 2 )]
+position = Vector2( 100.743, 0 )
+script = ExtResource( 1 )
+
+[node name="Input3" type="Node2D" parent="RowFour" groups=["Row_4"] instance=ExtResource( 2 )]
+position = Vector2( 201.486, 0 )
+scale = Vector2( 1, 1 )
+script = ExtResource( 1 )
+
+[node name="Input4" type="Node2D" parent="RowFour" groups=["Row_4"] instance=ExtResource( 2 )]
+position = Vector2( 302.23, 0 )
+script = ExtResource( 1 )
+
+[node name="Input5" type="Node2D" parent="RowFour" groups=["Row_4"] instance=ExtResource( 2 )]
+position = Vector2( 402.973, 0 )
+script = ExtResource( 1 )
+
+[node name="RowFive" type="Node2D" parent="."]
+position = Vector2( 41.9763, 463.496 )
+scale = Vector2( 1, 1 )
+
+[node name="Input1" type="Node2D" parent="RowFive" groups=["Row_5"] instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="Input2" type="Node2D" parent="RowFive" groups=["Row_5"] instance=ExtResource( 2 )]
+position = Vector2( 100.743, 0 )
+script = ExtResource( 1 )
+
+[node name="Input3" type="Node2D" parent="RowFive" groups=["Row_5"] instance=ExtResource( 2 )]
+position = Vector2( 201.486, 0 )
+scale = Vector2( 1, 1 )
+script = ExtResource( 1 )
+
+[node name="Input4" type="Node2D" parent="RowFive" groups=["Row_5"] instance=ExtResource( 2 )]
+position = Vector2( 302.23, 0 )
+script = ExtResource( 1 )
+
+[node name="Input5" type="Node2D" parent="RowFive" groups=["Row_5"] instance=ExtResource( 2 )]
+position = Vector2( 402.973, 0 )
+script = ExtResource( 1 )
+
+[node name="Row6" type="Node2D" parent="."]
+position = Vector2( 41.9763, 559.694 )
+scale = Vector2( 1, 1 )
+
+[node name="Input1" type="Node2D" parent="Row6" groups=["Row_6"] instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+
+[node name="Input2" type="Node2D" parent="Row6" groups=["Row_6"] instance=ExtResource( 2 )]
+position = Vector2( 100.743, 0 )
+script = ExtResource( 1 )
+
+[node name="Input3" type="Node2D" parent="Row6" groups=["Row_6"] instance=ExtResource( 2 )]
+position = Vector2( 201.486, 0 )
+scale = Vector2( 1, 1 )
+script = ExtResource( 1 )
+
+[node name="Input4" type="Node2D" parent="Row6" groups=["Row_6"] instance=ExtResource( 2 )]
+position = Vector2( 302.23, 0 )
+script = ExtResource( 1 )
+
+[node name="Input5" type="Node2D" parent="Row6" groups=["Row_6"] instance=ExtResource( 2 )]
+position = Vector2( 402.973, 0 )
+script = ExtResource( 1 )
