@@ -6,15 +6,12 @@
 [ext_resource path="res://fonts/Chomsky.otf" type="DynamicFontData" id=4]
 [ext_resource path="res://prefabs/Scoreboard.tscn" type="PackedScene" id=5]
 [ext_resource path="res://prefabs/GameBoard.tscn" type="PackedScene" id=6]
-[ext_resource path="res://fonts/Domine-Regular.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://prefabs/UI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://prefabs/Timer.tscn" type="PackedScene" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 67
 font_data = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 25
-font_data = ExtResource( 7 )
 
 [node name="Main" type="Node2D"]
 scale = Vector2( 0.952918, 0.914786 )
@@ -54,24 +51,6 @@ position = Vector2( -67.1621, 341.063 )
 [node name="Scoreboard" parent="." instance=ExtResource( 5 )]
 position = Vector2( -67.1621, 139.923 )
 
-[node name="Timer" type="Node2D" parent="."]
+[node name="Timer" parent="." instance=ExtResource( 8 )]
 
-[node name="Title" type="Label" parent="Timer"]
-margin_left = 554.088
-margin_top = 183.65
-margin_right = 594.088
-margin_bottom = 197.65
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 2 )
-text = "TIME REMAINING:"
-
-[node name="Timer" type="Timer" parent="Timer"]
-
-[node name="Amount" type="Label" parent="Timer"]
-margin_left = 797.55
-margin_top = 183.65
-margin_right = 1030.55
-margin_bottom = 212.65
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-custom_fonts/font = SubResource( 2 )
-text = "2:00"
+[node name="UI" parent="." instance=ExtResource( 7 )]
